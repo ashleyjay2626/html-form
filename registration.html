@@ -92,6 +92,68 @@
     </style>
 </head>
 <body>
-    
+    <main>
+        <h1>Registration</h1>
+        <form action="action.php">
+                
+                <div class="flex-field">
+                <label for="username" class="grid-label">Username</label>
+                <input type="text" name="username" placeholder="please enter your username" minlength="3" maxlength="10" class="grid-input">
+                </div>
+
+                <div class="flex-field">
+                <label for="email" class="grid-label">Email</label>
+                <input type="email" name="email" placeholder="email" class="grid-input">
+                </div>
+
+                <div class="flex-field">
+                <label for="password" class="grid-label">Password</label>    
+                <input type="password" name="password" id="" placeholder="password" class="grid-input">
+                </div>
+
+                 <div class="flex-field">
+                <label for="number" class="grid-label">Phone Number</label>   
+                <input type="number" name="cellphone" id="" class="grid-input">
+                </div>
+
+                <div class="flex-field">
+                <input type="hidden" value="abc1234" name="akotosinatoy" class="grid-input">
+                </div>
+
+                <div class="flex-field">
+                <label for="Address" class="grid-label">Address</label>
+                <textarea name="address" id="" rows="5"></textarea class="grid-input">
+                </div>
+
+                <div class="flex-field">
+                <label for="date" class="grid-label">Date</label>
+                <input type="date" name="date" id="" class="grid-input">
+                </div>
+
+                <div class="flex-field">
+                <label for="datetime-local" class="grid-label">Datetime-local</label>
+                <input type="datetime-local" name="datetime-local" id="" class="grid-input">
+                </div>
+
+                
+                <input type="radio" name="skills" id="" value="Programming"><label for="skills">Programming</label>              
+                <input type="radio" name="skills" id="" value="Java"><label for="skills">Java</label>
+                <input type="radio" name="skills" id="" value="Web"><label for="skills">Web</label>
+                <input type="file" name="file-upload" id="" accept=".jpg,.png,.gif">
+                <select name="year-level" id="">
+                    <option value="" disabled selected>--Select Year Level--</option>
+                    <optgroup label="College"></optgroup>
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third Year</option>
+                    <option value="4">Fourth Year</option>
+                </select>
+
+                <input type = submit value = "Click submit">
+                <input type="reset" value="Reset" id="submit">
+
+        
+        </form>
+    </main>
 </body>
 </html> 
